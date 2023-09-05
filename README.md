@@ -17,10 +17,11 @@ For the best savings, opt for the CKA + CKS bundle (**$210 Savings)**. Use code 
 
 If you are learning Kubernetes, check out the [kubernetes Learning Roadmap](https://github.com/techiescamp/kubernetes-learning-path)
 
-If you stop and started the servers. You need to run the below commands.
-   89  kubeadm reset
-   90  sudo kubeadm init --control-plane-endpoint=13.233.158.166 --apiserver-cert-extra-sans=13.233.158.166 --pod-network-cidr=192.168.0.0/16 --node-name ip-172-31-15-145 --ignore-preflight-errors Swap
-   91  mkdir -p $HOME/.kube
-   92  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-   93  sudo chown $(id -u):$(id -g) $HOME/.kube/config
-   94  export KUBECONFIG=/etc/kubernetes/admin.conf
+## If you stop and started the servers. You need to run the below commands. 
+
+1. kubeadm reset
+2.  sudo kubeadm init --control-plane-endpoint=13.233.158.166 --apiserver-cert-extra-sans=13.233.158.166 --pod-network-cidr=192.168.0.0/16 --node-name ip-172-31-15-145 --ignore-preflight-errors Swap
+3.  mkdir -p $HOME/.kube
+4.  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+5.  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+6.  export KUBECONFIG=/etc/kubernetes/admin.conf
